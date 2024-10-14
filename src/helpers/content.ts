@@ -113,21 +113,21 @@ export const calendarContent = [
     },
     { 
         date: "20 december", 
-        text: "Ska det komma gäster i jul?<br /> Kolla att gardiner och dukar är strukna så behöver inte mamma och svärmor slå ner på just DET.<br /> Sjunk sen ner i soffan och läs en bra bok eller somna till Netflix", 
-        link: "", 
-        image: "" 
+        text: "Ska det komma gäster i jul?<br /> Kolla att gardiner och dukar är strukna<br /> så behöver inte mamma och svärmor <br />slå ner på just DET.<br /> Sjunk sen ner i soffan och läs en bra bok eller somna till nåt streamat", 
+        link: "https://youtu.be/egedTrR-gD8?si=M03Um-m-MhvJXRgY", 
+        image: "./src/assets/resting_santa.jpg" 
     },
     { 
         date: "21 december", 
-        text: "Sista lugna kvällen att slå in julklappar.<br /> Här finns lite tips på olika sätt att variera inslagningen", 
-        link: "", 
-        image: "" 
+        text: "Vik något kul<br /> En origamidiamant, kanske?", 
+        link: "https://youtu.be/j1OaQYR01Hk?si=oCScxwKV385th5C5", 
+        image: "./src/assets/origami_diamond.png" 
     },
     { 
         date: "22 december", 
         text: "Ärligt talat, nu blir det snart julmat i flera dagar, så ta en paus.<br /> Tacos är ypperlig pausmat", 
-        link: "", 
-        image: "" 
+        link: "https://www.arla.se/recept/taco/", 
+        image: "https://images.arla.com/recordid/DBC2582B-D35C-4909-A9A4862967F24A10/taco.jpg" 
     },
     { 
         date: "23 december", 
@@ -137,8 +137,8 @@ export const calendarContent = [
     },
     { 
         date: "24 december", 
-        text: "Idag är det julafton, njut av allt du gjort under månaden!", 
+        text: "Idag är det julafton, njut av allt du gjort under månaden!<br />Disken kan vänta till imorgon...", 
         link: "", 
-        image: "" 
+        image: "https://go-well.se/uploads/posts/DYZ9VRbpJ5Ws8RgYxaLW.png" 
     },
 ];
