@@ -1,13 +1,13 @@
 // src/content.ts
 export const calendarContent = [
-    { date: "1 december", text: "Fira första advent med lite pyssel till glöggen. Vik en söt liten presentpåse!", link: "https://youtu.be/Jyke0kOq9qw?si=MPoDzgzxD1tiOPeD", image: "" },
+    { date: "1 december", text: "Vad sägs om lite pyssel till glöggen? Vik en söt liten presentpåse!", link: "https://youtu.be/Jyke0kOq9qw?si=MPoDzgzxD1tiOPeD", image: "./src/assets/origami_giftbag.png" },
     { date: "2 december", text: "Här är ett roligt recept!", link: "", image: "" },
     { date: "3 december", text: "Rocky Road", link: "", image: "" },
     { date: "4 december", text: "Vörtbröd", link: "", image: "" },
-    { date: "5 december", text: "Glutenfritt vörtbröd", link: "", image: "" },
+    { date: "5 december", text: "Naturligt glutenfritt julbröd. Och det går utmärkt att skippa kryddorna om man bara vill ha ett gott, glutenfritt bröd. Det brukar vi göra. Vi brukar byta ut en del av degvätskan mot lingonsylt också...", link: "https://kronjast.se/recept/glutenfritt-julbrod/", image: "./src/assets/glutenfree_bread.png" },
     { date: "6 december", text: "Pepparkakssnittar", link: "", image: "" },
     { date: "7 december", text: "Paketinslagning", link: "", image: "" },
-    { date: "8 december", text: "Pyssel för andra advent. Enkla och snygga julgranskulor av pappersremsor", link: "https://pin.it/66jNTt09o", image: "" },
+    { date: "8 december", text: "Pyssel är aldrig fel. Enkla och snygga julgranskulor av pappersremsor", link: "https://pin.it/66jNTt09o", image: "./src/assets/paper_bauble.png" },
     { date: "9 december", text: "Det är väl idag man ska lägga lutfisken i blöt?", link: "", image: "" },
     { date: "10 december", text: "Förbered lite godis till jul. Härliga saffranskolor.", link: "https://www.coop.se/recept/saffranskola/", image: "https://res.cloudinary.com/coopsverige/image/upload/f_auto,fl_progressive,q_90,g_center,h_800,w_800/v1665473257/cloud/260002.jpg" },
     { date: "11 december", text: "Det är bara ett par dagar kvar, så nu börjar det bli dags för lussebullar", link: "https://www.coop.se/recept/lussebullar-grundrecept/", image: "https://res.cloudinary.com/coopsverige/image/upload/f_auto,fl_progressive,q_90,g_center,h_800,w_800/v1601545714/409312.jpg" },
