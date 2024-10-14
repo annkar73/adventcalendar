@@ -18,18 +18,39 @@ Projektet inkluderar även en nedräkning till julafton från innevarande dag.
 
 ### Installation
 
-<ol>
-  <li>Klona repot: <code>git clone https://github.com/annkar73/adventcalendar.git</code></li>
-  <li>Gå till projektkatalogen: <code>cd adventcalendar</code></li>
-  <li>Installera beroenden: <code>npm install</code></li>
-</ol>
+
+  Klona repot: `git clone https://github.com/annkar73/adventcalendar.git`  
+  Gå till projektkatalogen: `cd adventcalendar`  
+  Installera beroenden: `npm install`
+
 
 ### Användning
 
-<ol>
-  <li>Starta utvecklingsservern: <code>npm run dev</code></li>
-  <li>Gå vidare till webläsaren via länken i terminalen</li>
-</ol>
+
+  Starta utvecklingsservern: `npm run dev`  
+  Gå vidare till webläsaren via länken i terminalen  
+  Ha roligt med att styla om, lägga till och ta bort funktioner och göra det till din egen version
+
+
+### Utvecklarinställningar
+I filen **Day.tsx** finns en konstant `isDevelopmentMode` som bör vara inställt på `true`för utvecklingssyften. För att återgå till normal funktionalitet och begränsa tillgången till luckor, ställ om denna konstant till `false`: `const isDevelopmentMode = false;`
+
+## Projektstruktur
+
+<pre>
+adventcalendar/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── helpers/
+│   ├── styles/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── ...
+└── package.json
+</pre>
 
 # Advent Calendar
 
@@ -47,18 +68,38 @@ The project also includes a countdown to Christmas Eve from the current day.
   <li>Styled Components: The project uses styled-components for styling, making it easy to maintain and customize</li>
 </ul>
 
-## Installation 
-<ol>
-  <li>Clone the repository: <code>git clone https://github.com/annkar73/adventcalendar.git</code></li>
-  <li>Navigate to the project directory: <code>cd adventcalendar</code></li>
-  <li>Install dependencies: <code>npm install</code></li>
+### Installation 
+
+  Clone the repository: `git clone https://github.com/annkar73/adventcalendar.git`  
+  Navigate to the project directory: `cd adventcalendar`  
+  Install dependencies: `npm install`
 </ol>
 
 ### Usage
-<ol>
-  <li>Start the development server: <code>npm run dev</code></li>
-  <li>Open the link in the terminal to access the app in your browser</li>
-</ol>
+
+  Start the development server: `npm run dev`  
+  Open the link in the terminal to access the app in your browser  
+  Have fun styling, adding and removing features to make it your own version
+
+### Developer Settings
+In the file **Day.tsx**, there is a constant `isDevelopmentMode` that should be set to `true` for development purposes. To revert to normal functionality and restrict access to the doors, change this constant to `false`: `const isDevelopmentMode = false;`
+
+## Project Structure
+
+<pre>
+adventcalendar/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── helpers/
+│   ├── styles/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── ...
+└── package.json
+</pre>
 
 
 
