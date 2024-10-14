@@ -19,7 +19,7 @@ const DayButton = styled.button<{ bgcolor: string }>`
     margin: 0;
 
     &:hover {
-        background-color: goldenrod;
+        background-color: gold;
         color: darkred;
         border: 2px solid transparent;
         transform: translateY(-2px);

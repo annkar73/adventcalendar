@@ -33,7 +33,7 @@ const shuffleArray = (array: number[]) => {
         .map(({ value }) => value);
 };
 
-const colors = ["darkred", "darkgreen"];
+const colors = ["darkred", "darkgreen", "darkorange", "indigo", "teal"];
 
 const Calendar = () => {
     const [shuffledDays, setShuffledDays] = useState<number[]>([]);  
