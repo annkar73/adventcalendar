@@ -47,7 +47,7 @@ const Modal = ({ day, onClose }: ModalProps) => {
             <ModalContent onClick={(e) => e.stopPropagation()}>
                 <h2>{content.date}</h2>
                 {content.image && <StyledImage src={content.image} alt={`Bild för ${content.date}`} style={{ maxWidth: '100%', height: 'auto'}} />}
-                <p>{content.text}</p>
+                <p dangerouslySetInnerHTML={{__html: content.text}} />
                 <p>
                 {content.link && <a href={content.link} target="_blank" rel="noopener noreferrer">Gå till sidan</a>}
                 </p>
