@@ -1,50 +1,68 @@
-# React + TypeScript + Vite
+# Adventskalender  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En enkel adventskalender byggd med Vite, React och TypeScript.  
+Kalendern erbjuder något nytt varje dag, en länk till ett pyssel eller recept som passar för julsäsongen.  
+Projektet inkluderar även en nedräkning till julafton från innevarande dag.
 
-Currently, two official plugins are available:
+[English version](#advent-calendar)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funktioner
 
-## Expanding the ESLint configuration
+<ul>
+<li>Adventskalender: En klickbar kalender där användaren kan öppna en ny "lucka" varje dag fram till julafton</li>
+<li>Nedräkning: Visar hur många dagar, timmar och minuter som återstår till midnatt på julafton</li>
+<li>Modalvisning: Varje kalenderdag öppnar en modal med länk till ett julinspirerat pyssel eller recept</li>
+<li>Responsiv design: Layouten anpassar sig till olika skärmstorlekar, vilket säkerställer en smidig upplevelse på mobila enheter</li>
+<li>Styled Components: Projektet använder styled-components för styling, vilket gör det enkelt att underhålla och anpassa</li>
+</ul>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Installation
 
-- Configure the top-level `parserOptions` property like this:
+<ol>
+  <li>Klona repot: <code>git clone https://github.com/annkar73/adventcalendar.git</code></li>
+  <li>Gå till projektkatalogen: <code>cd adventcalendar</code></li>
+  <li>Installera beroenden: <code>npm install</code></li>
+</ol>
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Användning
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<ol>
+  <li>Starta utvecklingsservern: <code>npm run dev</code></li>
+  <li>Gå vidare till webläsaren via länken i terminalen</li>
+</ol>
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# Advent Calendar
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+A simple advent calendar built with Vite, React and TypeScript.  
+The calendar offers something new every day, a link to a Christmas Craft or recipe suitable for the holiday season.  
+The project also includes a countdown to Christmas Eve from the current day.  
+
+## Features
+
+<ul>
+  <li>Advent Calendar: A clickable calendar where users can open a new "door" every day until Christmas Eve</li>
+  <li>Countdown: Displays how many days, hours and minutes are left until midnight on Christmas Eve</li>
+  <li>Modal Display: Each calendar day opens a modal with a link to a Christmas-inspired craft or recipe</li>
+  <li>Responsive Design: The layout adjusts to different screen sizes, ensuring a smooth experience on mobile devices</li>
+  <li>Styled Components: The project uses styled-components for styling, making it easy to maintain and customize</li>
+</ul>
+
+## Installation 
+<ol>
+  <li>Clone the repository: <code>git clone https://github.com/annkar73/adventcalendar.git</code></li>
+  <li>Navigate to the project directory: <code>cd adventcalendar</code></li>
+  <li>Install dependencies: <code>npm install</code></li>
+</ol>
+
+### Usage
+<ol>
+  <li>Start the development server: <code>npm run dev</code></li>
+  <li>Open the link in the terminal to access the app in your browser</li>
+</ol>
+
+
+
+
+
+
+  
