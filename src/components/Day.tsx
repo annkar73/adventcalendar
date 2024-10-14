@@ -49,7 +49,10 @@ const Day = ({ day, color }: DayProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isAllowed, setIsAllowed] = useState(true);
 
-    const isDevelopmentMode = true;
+    // isDevelopmentMode constant
+    // Set this to true for development purposes to allow access to all doors regardless of the current date
+    // Set to false before deploying to restrict access to the doors based on the date
+    const isDevelopmentMode = true; // Change to false for production
 
     useEffect(() => {
         if (!isDevelopmentMode) {
