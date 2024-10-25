@@ -8,9 +8,9 @@ export const calendarContent = [
     },
     { 
         date: "2 december", 
-        text: "Här är ett roligt recept!", 
-        link: "", 
-        image: "" 
+        text: "Knäck!<br /> Om man gör den tidigt hinner man göra<br /> ny när den har tagit slut", 
+        link: "https://www.arla.se/recept/knack/", 
+        image: "https://images.arla.com/recordid/E3C21264-5D1F-4254-B3260D68CF29A3FD/knack.jpg" 
     },
     { 
         date: "3 december", 
@@ -75,8 +75,9 @@ export const calendarContent = [
     { 
         date: "13 december", 
         text: "Lucia! Har du kommit ihåg att köpa ljus? <br />Fika och sjung idag, ta en paus från alla förberedelser.", 
-        link: "", 
-        image: "" },
+        link: "https://youtu.be/C9f6zxo6X0s?si=xtuZT8OgYXRgzQ4N", 
+        image: "https://cdn.pixabay.com/photo/2023/11/15/07/09/lucia-8389420_1280.png" 
+    },
     { 
         date: "14 december", 
         text: "Pärla snöflingor att hänga i granen eller fönstret", 
@@ -85,31 +86,31 @@ export const calendarContent = [
     { 
         date: "15 december", 
         text: "Kolla julgransbelysningen! <br />Det är ju inte kul om den inte funkar på julafton", 
-        link: "", 
-        image: "" 
+        link: "https://www.elsakerhetsverket.se/privatpersoner/dina-elprodukter/produkter/belysning/julbelysning/", 
+        image: "https://cdn.pixabay.com/photo/2016/01/01/22/11/christmas-1117155_1280.jpg" 
     },
     { 
         date: "16 december", 
         text: "Skippa pysslet idag och drick en mugg glögg istället.<br /> Köp färdig eller gör egen, vilket du tycker känns rimligast (jag köper min färdig)", 
-        link: "", 
-        image: "" 
+        link: "https://www.cocktailia.se/recept/glogg", 
+        image: "https://www.cocktailia.se/images/74/x4boag-glogg-klassiskt-recept-pa-allas-julfavorit-cocktailiase-960x800_160x67.webp" 
     },
     { 
         date: "17 december", 
         text: "Sill? <br />Det vet ju alla att om det inte är sill på bordet så är det ingen högtid.<br /> Det är sen gammalt",
-        link: "", 
-        image: "" },
+        link: "https://www.ica.se/artikel/sillfavoriter-till-julbordet/", 
+        image: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/nacqyf40fc60qlz9u03v.jpg" },
     { 
         date: "18 december", 
         text: "Julrim?<br /> Inte för mig, men många tycker att det är skoj.<br /> Här finns lite idéer", 
-        link: "", 
-        image: "" 
+        link: "https://www.julrimmet.se/", 
+        image: "https://cdn.pixabay.com/photo/2023/10/20/11/19/ai-generated-8329269_1280.jpg" 
     },
     { 
         date: "19 december", 
         text: "Vi behöver mer kola!<br /> Pepparkakskola är gott", 
-        link: "", 
-        image: "" 
+        link: "https://www.arla.se/recept/pepparkakskola/", 
+        image: "https://images.arla.com/recordid/BE8ED0C0-54AC-45F8-A05968CD5C96E363/pepparkakskola.jpg" 
     },
     { 
         date: "20 december", 
@@ -138,7 +139,7 @@ export const calendarContent = [
     { 
         date: "24 december", 
         text: "Idag är det julafton, njut av allt du gjort under månaden!<br />Disken kan vänta till imorgon...", 
-        link: "", 
+        link: "https://youtu.be/yXQViqx6GMY?si=leBVLWYL4QQpwDbE", 
         image: "https://go-well.se/uploads/posts/DYZ9VRbpJ5Ws8RgYxaLW.png" 
     },
 ];
