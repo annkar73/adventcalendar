@@ -13,7 +13,7 @@ Projektet inkluderar även en nedräkning till julafton från innevarande dag.
 <li>Nedräkning: Visar hur många dagar, timmar och minuter som återstår till midnatt på julafton</li>
 <li>Modalvisning: Varje kalenderdag öppnar en modal med länk till ett julinspirerat pyssel eller recept</li>
 <li>Responsiv design: Layouten anpassar sig till olika skärmstorlekar, vilket säkerställer en smidig upplevelse på mobila enheter</li>
-<li>Styled Components: Projektet använder styled-components för styling, vilket gör det enkelt att underhålla och anpassa</li>
+<li>Styled Components: Projektet använder styled-components, vilket gör det enkelt att underhålla och anpassa</li>
 </ul>
 
 ### Installation
@@ -65,7 +65,7 @@ The project also includes a countdown to Christmas Eve from the current day.
   <li>Countdown: Displays how many days, hours and minutes are left until midnight on Christmas Eve</li>
   <li>Modal Display: Each calendar day opens a modal with a link to a Christmas-inspired craft or recipe</li>
   <li>Responsive Design: The layout adjusts to different screen sizes, ensuring a smooth experience on mobile devices</li>
-  <li>Styled Components: The project uses styled-components for styling, making it easy to maintain and customize</li>
+  <li>Styled Components: The project uses styled-components, making it easy to maintain and customize</li>
 </ul>
 
 ### Installation 
