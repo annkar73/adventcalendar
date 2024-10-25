@@ -26,7 +26,7 @@ export const calendarContent = [
     },
     { 
         date: "5 december", 
-        text: "Naturligt glutenfritt julbröd. <br />Det går utmärkt att skippa kryddorna om man bara vill ha ett gott, glutenfritt bröd. Det brukar vi göra. <br />Vi brukar byta ut en del av degvätskan mot lingonsylt också...", 
+        text: "Naturligt glutenfritt julbröd. <br />Det går utmärkt att skippa kryddorna om man bara vill ha<br /> ett gott, glutenfritt bröd. Det brukar vi göra. <br />Vi brukar byta ut en del av degvätskan mot lingonsylt också...", 
         link: "https://kronjast.se/recept/glutenfritt-julbrod/", 
         image: "./src/assets/glutenfree_bread.png" 
     },

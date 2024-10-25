@@ -51,6 +51,7 @@ const getRandomColor = () => {
     return (
         <>
         <CalendarContainer>
+            
             {shuffledDays.map(day => (
                 <Day key={day} day={day} color={getRandomColor()} />
             ))}
