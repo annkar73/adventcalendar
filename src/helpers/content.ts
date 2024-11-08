@@ -2,19 +2,19 @@
 export const calendarContent = [
     { 
         date: "1 december", 
-        text: "Vad sägs om lite pyssel till glöggen? <br />Vik en söt liten presentpåse!", 
+        text: "Vad sägs om lite pyssel till glöggen? Vik en söt liten presentpåse!", 
         link: "https://youtu.be/Jyke0kOq9qw?si=MPoDzgzxD1tiOPeD", 
         image: "./src/assets/origami_giftbag.png" 
     },
     { 
         date: "2 december", 
-        text: "Knäck!<br /> Om man gör den tidigt hinner man göra<br /> ny när den har tagit slut", 
+        text: "Knäck! Om man gör den tidigt hinner man göra ny när den har tagit slut", 
         link: "https://www.arla.se/recept/knack/", 
         image: "https://images.arla.com/recordid/E3C21264-5D1F-4254-B3260D68CF29A3FD/knack.jpg" 
     },
     { 
         date: "3 december", 
-        text: "Rocky Road<br /> Det har ju blivit lite av en klassiker runt jul", 
+        text: "Rocky Road! Det har ju blivit lite av en klassiker runt jul", 
         link: "https://www.koket.se/leilas-rocky-road", 
         image: "https://img.koket.se/standard-mega/leilas-rocky-road-ny.jpg.webp" 
     },
@@ -26,7 +26,7 @@ export const calendarContent = [
     },
     { 
         date: "5 december", 
-        text: "Naturligt glutenfritt julbröd. <br />Det går utmärkt att skippa kryddorna om man bara vill ha<br /> ett gott, glutenfritt bröd. Det brukar vi göra. <br />Vi brukar byta ut en del av degvätskan mot lingonsylt också...", 
+        text: "Naturligt glutenfritt julbröd. <br />Det går utmärkt att skippa kryddorna om man bara vill ha ett gott, glutenfritt bröd. Det brukar vi göra. Vi brukar byta ut en del av degvätskan mot lingonsylt också...", 
         link: "https://kronjast.se/recept/glutenfritt-julbrod/", 
         image: "./src/assets/glutenfree_bread.png" 
     },
@@ -38,7 +38,7 @@ export const calendarContent = [
     },
     { 
         date: "7 december", 
-        text: "Paketinslagning<br />Det kan vara så mycket mer än bara röda snören <br />och papper med snögubbar", 
+        text: "Paketinslagning<br />Det kan vara så mycket mer än bara röda snören och papper med snögubbar", 
         link: "https://panduro.com/sv-se/inspiration/artiklar/paketinslagning-kluriga-tips", 
         image: "./src/assets/wrapping_gifts.png" 
     },
@@ -50,7 +50,7 @@ export const calendarContent = [
     },
     { 
         date: "9 december", 
-        text: "Det är idag man ska lägga lutfisken i blöt. <br />Dessutom har Anna namnsdag, så det är ju en ganska viktig dag.<br /> Ta en pepparkaka också, vetja!", 
+        text: "Det är idag man ska lägga lutfisken i blöt. <br />Dessutom har Anna namnsdag, så det är ju en ganska viktig dag. Ta en pepparkaka också, vetja!", 
         link: "https://www.ica.se/recept/lutfisk-med-senapssas-3451/", 
         image: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_65181/cf_259/lutfisk_med_senapssas.jpg" 
     },
@@ -97,12 +97,12 @@ export const calendarContent = [
     },
     { 
         date: "17 december", 
-        text: "Sill? <br />Det vet ju alla att om det inte är sill på bordet så är det ingen högtid.<br /> Det är sen gammalt",
+        text: "Sill? <br />Det vet ju alla att om det inte är sill på bordet så är det ingen högtid. Det är sen gammalt",
         link: "https://www.ica.se/artikel/sillfavoriter-till-julbordet/", 
         image: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/nacqyf40fc60qlz9u03v.jpg" },
     { 
         date: "18 december", 
-        text: "Julrim?<br /> Inte för mig, men många tycker att det är skoj.<br /> Här finns lite idéer", 
+        text: "Julrim?<br /> Inte för mig, men många tycker att det är skoj. Här finns lite idéer", 
         link: "https://www.julrimmet.se/", 
         image: "https://cdn.pixabay.com/photo/2023/10/20/11/19/ai-generated-8329269_1280.jpg" 
     },
@@ -114,7 +114,7 @@ export const calendarContent = [
     },
     { 
         date: "20 december", 
-        text: "Ska det komma gäster i jul?<br /> Kolla att gardiner och dukar är strukna<br /> så behöver inte mamma och svärmor <br />slå ner på just DET.<br /> Sjunk sen ner i soffan och läs en bra bok eller somna till nåt streamat", 
+        text: "Ska det komma gäster i jul?<br /> Kolla att gardiner och dukar är strukna så behöver inte mamma och svärmor slå ner på just DET. Sjunk sen ner i soffan och läs en bra bok eller somna till nåt streamat", 
         link: "https://youtu.be/egedTrR-gD8?si=M03Um-m-MhvJXRgY", 
         image: "./src/assets/resting_santa.jpg" 
     },

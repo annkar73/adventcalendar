@@ -11,16 +11,25 @@ bottom: 0;
 background: rgba(0, 0, 0, 0.5);
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 `;
 
 const ModalContent = styled.div`
     background: white;
     padding: 20px;
+    margin: 40px 20px;
     border-radius: 8px;
     max-width: 80%;
     overflow: auto;
+
+    @media (min-width: 768px) {
+        max-width: 50vw;
+    }
+    @media (min-width: 1024px) {
+        max-width: 50vw;
+    }
+    
 `;
 
 const StyledImage = styled.img`
