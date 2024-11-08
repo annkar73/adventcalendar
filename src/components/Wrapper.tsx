@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { ReactNode } from "react";
 
 // Stilar för TextWrapper
-const StyledTextWrapper = styled.div<{ bgcolor?: string }>`
+export const StyledTextWrapper = styled.div<{ bgcolor?: string }>`
     background-color: ${(props) => props.bgcolor || 'snow'};
     color: darkred;
     font-weight: bold;

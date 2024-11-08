@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { styled } from "styled-components";
 
-const ModalOverlay = styled.div`
+
+const CountdownModal = styled.div`
     position: fixed;
     top: 0;
     left: 0;
@@ -10,7 +11,7 @@ const ModalOverlay = styled.div`
     background: rgba(0, 0, 0, 0.5); /* Halvgenomskinlig bakgrund */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     backdrop-filter: blur(4px); /* Lägger till en suddig effekt */
     z-index: 1000; /* Placera ovanpå annat innehåll */
 `;
@@ -18,11 +19,14 @@ const ModalOverlay = styled.div`
 const StyledCountdown = styled.div`
     font-size: 1.2rem;
     font-weight: bold;
-    background: white;
-    padding: 20px;
+    background: darkred;
+    color: snow;
+    padding: 50px 20px 30px 20px;
+    border: 10px solid snow;
+
     border-radius: 8px;
     text-align: center;
-    margin: 20px;
+    margin: 50px 20px 30px 20px;
     max-width: 80%;
 `;
 
@@ -83,10 +87,11 @@ const Countdown = () => {
     const { days: daysToDecember, hours: hoursToDecember, minutes: minutesToDecember } = timeLeftDecember;
 
     return (
-        <ModalOverlay>
+        <>
+        <CountdownModal>
             <StyledCountdown>
                 {daysToDecember > 0 ? (
-                    <p>Om {daysToDecember} dagar, {hoursToDecember} timmar och {minutesToDecember} minuter kan du öppna första luckan!</p>
+                    <p>Du får vänta lite till, men om {daysToDecember} dagar, {hoursToDecember} timmar och {minutesToDecember} minuter <br /> kan du öppna första luckan!</p>
                 ) : null}
                 <p>
                     {daysToChristmas === 0
@@ -96,7 +101,8 @@ const Countdown = () => {
                           }!`}
                 </p>
             </StyledCountdown>
-        </ModalOverlay>
+        </CountdownModal>
+        </>
     );
 };
 
