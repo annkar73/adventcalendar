@@ -29,7 +29,7 @@ const Footer = () => {
         
         <FooterContainer> 
            
-            <FooterP>Den här kalendern är ett hobbyprojekt, som enbart länkar till gratis förslag på pyssel och recept för skojs skull. </FooterP>
+            <FooterP>Den här kalendern är ett hobbyprojekt, som enbart länkar till gratis förslag på pyssel, recept mm för skojs skull. </FooterP>
             </FooterContainer>
         
         </>
