@@ -52,7 +52,7 @@ const Day = ({ day, color }: DayProps) => {
     // isDevelopmentMode constant
     // Set this to true for development purposes to allow access to all doors regardless of the current date
     // Set to false before deploying to restrict access to the doors based on the date
-    const isDevelopmentMode = true; 
+    const isDevelopmentMode = false; 
 
     useEffect(() => {
         if (!isDevelopmentMode) {

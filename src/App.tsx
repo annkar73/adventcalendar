@@ -2,7 +2,7 @@ import './App.css'
 import Calendar from './components/Calendar';
 import Footer from './components/Footer';
 import Header from './components/Header';
-// import Countdown from './components/Countdown'
+import Countdown from './components/Countdown'
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <Header />
-      {/* <Countdown /> */}
+      <Countdown />
       <Calendar />     
     <Footer /> 
     </>
