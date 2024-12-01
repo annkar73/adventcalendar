@@ -4,7 +4,7 @@ export const calendarContent = [
         date: "1 december", 
         text: "Vad sägs om lite pyssel till glöggen? Vik en söt liten presentpåse!", 
         link: "https://youtu.be/Jyke0kOq9qw?si=MPoDzgzxD1tiOPeD", 
-        image: "./src/assets/origami_giftbag.png" 
+        image: "./assets/origami_giftbag.png" 
     },
     { 
         date: "2 december", 
@@ -28,7 +28,7 @@ export const calendarContent = [
         date: "5 december", 
         text: "Naturligt glutenfritt julbröd. <br />Det går utmärkt att skippa kryddorna om man bara vill ha ett gott, glutenfritt bröd. Det brukar vi göra. Vi brukar byta ut en del av degvätskan mot lingonsylt också...", 
         link: "https://kronjast.se/recept/glutenfritt-julbrod/", 
-        image: "./src/assets/glutenfree_bread.png" 
+        image: "./assets/glutenfree_bread.png" 
     },
     { 
         date: "6 december", 
@@ -40,13 +40,13 @@ export const calendarContent = [
         date: "7 december", 
         text: "Paketinslagning<br />Det kan vara så mycket mer än bara röda snören och papper med snögubbar", 
         link: "https://panduro.com/sv-se/inspiration/artiklar/paketinslagning-kluriga-tips", 
-        image: "./src/assets/wrapping_gifts.png" 
+        image: "./assets/wrapping_gifts.png" 
     },
     { 
         date: "8 december", 
         text: "Pyssel är aldrig fel. <br />Enkla och snygga julgranskulor av pappersremsor", 
         link: "https://pin.it/66jNTt09o", 
-        image: "./src/assets/paper_bauble.png" 
+        image: "./assets/paper_bauble.png" 
     },
     { 
         date: "9 december", 
@@ -116,13 +116,13 @@ export const calendarContent = [
         date: "20 december", 
         text: "Ska det komma gäster i jul?<br /> Kolla att gardiner och dukar är strukna så behöver inte mamma och svärmor slå ner på just DET. Sjunk sen ner i soffan och läs en bra bok eller somna till nåt streamat", 
         link: "https://youtu.be/egedTrR-gD8?si=M03Um-m-MhvJXRgY", 
-        image: "./src/assets/resting_santa.jpg" 
+        image: "./assets/resting_santa.jpg" 
     },
     { 
         date: "21 december", 
         text: "Vik något kul<br /> En origamidiamant, kanske?", 
         link: "https://youtu.be/j1OaQYR01Hk?si=oCScxwKV385th5C5", 
-        image: "./src/assets/origami_diamond.png" 
+        image: "./assets/origami_diamond.png" 
     },
     { 
         date: "22 december", 
