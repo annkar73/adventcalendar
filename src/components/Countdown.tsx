@@ -1,19 +1,18 @@
 import { useEffect, useState } from "react";
 import { styled } from "styled-components";
 
-
 const CountdownModal = styled.div`
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Halvgenomskinlig bakgrund */
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    backdrop-filter: blur(4px); /* Lägger till en suddig effekt */
-    z-index: 1000; /* Placera ovanpå annat innehåll */
+    backdrop-filter: blur(4px);
+    z-index: 1000;
 `;
 
 const StyledCountdown = styled.div`
@@ -23,11 +22,26 @@ const StyledCountdown = styled.div`
     color: snow;
     padding: 50px 20px 30px 20px;
     border: 10px solid snow;
-
     border-radius: 8px;
     text-align: center;
     margin: 50px 20px 30px 20px;
     max-width: 80%;
+`;
+
+const CloseButton = styled.button`
+    background: none;
+    color: snow;
+    border: 2px solid snow;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+
+    &:hover {
+        background: snow;
+        color: darkred;
+    }
 `;
 
 const Countdown = () => {
@@ -37,72 +51,52 @@ const Countdown = () => {
         minutes: number;
     } | null>(null);
 
-    const [timeLeftDecember, setTimeLeftDecember] = useState<{
-        days: number;
-        hours: number;
-        minutes: number;
-    } | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(true);
+
+    const calculateTimeLeft = (targetDate: Date) => {
+        const now = new Date();
+        const timeDiff = targetDate.getTime() - now.getTime();
+
+        return {
+            days: Math.floor(timeDiff / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+            minutes: Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60)),
+        };
+    };
 
     useEffect(() => {
-        const calculateTimeLeft = () => {
+        const updateCountdown = () => {
             const now = new Date();
 
-            // Nedräkning till julafton, och sedan till 15 januari
-            let targetDate = new Date(now.getFullYear(), 11, 24, 0, 0, 0); // 24 december
-            if (now > targetDate) {
-                targetDate = new Date(now.getFullYear() + 1, 0, 15, 0, 0, 0); // 15 januari nästa år
+            // Räkna ner till julafton
+            let christmasDate = new Date(now.getFullYear(), 11, 24, 0, 0, 0);
+            if (now > christmasDate) {
+                christmasDate = new Date(now.getFullYear() + 1, 11, 24, 0, 0, 0);
             }
-
-            const timeDiffChristmas = targetDate.getTime() - now.getTime();
-            const daysToChristmas = Math.floor(timeDiffChristmas / (1000 * 60 * 60 * 24));
-            const hoursToChristmas = Math.floor((timeDiffChristmas % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutesToChristmas = Math.floor((timeDiffChristmas % (1000 * 60 * 60)) / (1000 * 60));
-
-            setTimeLeftChristmas({ days: daysToChristmas, hours: hoursToChristmas, minutes: minutesToChristmas });
-
-            // Nedräkning till 1 december
-            const decemberFirst = new Date(now.getFullYear(), 11, 1, 0, 0, 0);
-            if (now > decemberFirst) {
-                decemberFirst.setFullYear(decemberFirst.getFullYear() + 1); // Om efter 1 december, sätt till nästa år
-            }
-            const timeDiffDecember = decemberFirst.getTime() - now.getTime();
-            const daysToDecember = Math.floor(timeDiffDecember / (1000 * 60 * 60 * 24));
-            const hoursToDecember = Math.floor((timeDiffDecember % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutesToDecember = Math.floor((timeDiffDecember % (1000 * 60 * 60)) / (1000 * 60));
-
-            setTimeLeftDecember({ days: daysToDecember, hours: hoursToDecember, minutes: minutesToDecember });
+            setTimeLeftChristmas(calculateTimeLeft(christmasDate));
         };
 
-        calculateTimeLeft();
-        const interval = setInterval(calculateTimeLeft, 1000 * 60); // Uppdatera varje minut
+        updateCountdown();
+        const interval = setInterval(updateCountdown, 60000); // Uppdatera varje minut
 
         return () => clearInterval(interval);
     }, []);
 
-    if (timeLeftChristmas === null || timeLeftDecember === null) {
-        return <p>Laddar nedräkning...</p>;
-    }
+    const handleClose = () => setIsModalOpen(false);
 
-    const { days: daysToChristmas, hours: hoursToChristmas, minutes: minutesToChristmas } = timeLeftChristmas;
-    const { days: daysToDecember, hours: hoursToDecember, minutes: minutesToDecember } = timeLeftDecember;
+    if (!isModalOpen) return null;
 
     return (
-        <>
         <CountdownModal>
             <StyledCountdown>
-                {daysToDecember > 0 ? (
-                    <p>Du får vänta lite till, men om {daysToDecember} dagar, {hoursToDecember} timmar och {minutesToDecember} minuter <br /> kan du öppna första luckan!</p>
-                ) : null}
                 <p>
-                    {daysToChristmas === 0
+                    {timeLeftChristmas && timeLeftChristmas.days === 0
                         ? "Idag är det julafton!"
-                        : `Nu är det ${daysToChristmas} dagar, ${hoursToChristmas} timmar och ${minutesToChristmas} minuter kvar till ${
-                              new Date().getMonth() === 0 && new Date().getDate() >= 15 ? "nästa jul" : "julafton"
-                          }!`}
+                        : `Nu är det ${timeLeftChristmas?.days} dagar, ${timeLeftChristmas?.hours} timmar och ${timeLeftChristmas?.minutes} minuter kvar till julafton!`}
                 </p>
+                <CloseButton onClick={handleClose}>Stäng</CloseButton>
             </StyledCountdown>
         </CountdownModal>
-        </>
     );
 };
 
