@@ -17,6 +17,7 @@ align-items: center;
 
 const ModalContent = styled.div`
     background: white;
+    color: black;
     padding: 20px;
     margin: 40px 20px;
     border-radius: 8px;
